@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações do Usuário</title>
+  <link rel="stylesheet" href="assets/CSS/styles-segunda-pagina.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="user-info-box">
+      <h2>Informações do Usuário</h2>
+      <p><strong>Nome:</strong> <span id="userName"></span></p>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    </div>
+
+    <div class="file-action-box">
+      <h2>Informe um número de registros a serem gerados</h2>
+      <input type="number" id="numberInput" placeholder="Insira um número de 10 a 1000">
+      <button type="button" class="create-file-button" onclick="createExcelFile()">Criar Arquivo .Xlsx</button>
+    </div>
+
+    <div class="file-upload-box">
+      <h2>Enviar Arquivo por Email</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <button type="submit" class="send-button">Enviar Arquivo</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/JS/segunda-pagina.js"></script>
+</body>
+
+</html>
