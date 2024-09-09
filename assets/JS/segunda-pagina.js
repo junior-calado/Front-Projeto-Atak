@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     try {
-        const response = await fetch('http://localhost:5089/api/User/Info', {
+        const response = await fetch('https://projeto-atak-production.up.railway.app/api/User/Info', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -40,7 +40,7 @@ async function createExcelFile() {
     }
 
     try {
-        const response = await fetch('http://localhost:5089/Excel/generate-excel', {
+        const response = await fetch('https://projeto-atak-production.up.railway.app/Excel/generate-excel', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -67,7 +67,7 @@ async function sendEmail() {
     const token = localStorage.getItem('token');
 
     try {
-        const response = await fetch('http://localhost:5089/Email/enviar-email', {
+        const response = await fetch('https://projeto-atak-production.up.railway.app/Email/enviar-email', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,

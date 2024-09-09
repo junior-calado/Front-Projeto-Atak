@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     const password = document.getElementById("password").value;
 
     try {
-        const response = await fetch('http://localhost:5089/api/User/Login', {
+        const response = await fetch('https://projeto-atak-production.up.railway.app/api/User/Login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

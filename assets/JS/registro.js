@@ -6,7 +6,7 @@ document.querySelector('form').addEventListener('submit', async function (event)
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:5089/api/User/Create', { 
+        const response = await fetch('https://projeto-atak-production.up.railway.app/api/User/Create', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
